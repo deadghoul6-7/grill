@@ -1,9 +1,8 @@
 const {src, dest, series, watch} = require("gulp");
 const concat = require("gulp-concat");
 const htmlMin = require("gulp-htmlmin");
-const { pipe } = require("imask");
 const autoprefixer = require('gulp-autoprefixer');
-// const del = require('del');
+const del = require('del');
 const browserSync = require('browser-sync').create();
 const svgSprite = require('gulp-svg-sprite');
 const image = require('gulp-image');
@@ -107,4 +106,4 @@ watch([
 watch('src/js/**/*.js', scripts);
 watch('src/resourses/**', resourses);
 
-exports.default = series(styles, htmlMinify, svgSprites, images, scripts, resourses, watchFile);
+exports.default = series(clean, styles, htmlMinify, svgSprites, images, scripts, resourses, watchFile);
