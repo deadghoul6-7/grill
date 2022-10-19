@@ -95,7 +95,7 @@ const watchFile = () => {
 }
 
 watch('src/**/*.html', htmlMinify);
-watch('src/style/**/*.css', styles);
+watch('src/css/**/*.css', styles);
 watch('src/img/svg/**/*.svg', svgSprites);
 watch([
     'src/img/**/*.jpg',
