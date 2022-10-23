@@ -12,7 +12,7 @@ $(document).ready(function(){
 
       $('.gallery').slick({
 dots: false,
-infinite: false,
+infinite: true,
 speed: 300,
 slidesToShow: 4,
 slidesToScroll: 4,
@@ -26,6 +26,7 @@ settings: {
   slidesToShow: 3,
   slidesToScroll: 3,
   infinite: false,
+  adaptiveHeight: true,
   prevArrow: false,
   nextArrow: false,
   dots: false
@@ -35,6 +36,7 @@ settings: {
 breakpoint: 600,
 settings: {
   slidesToShow: 2,
+  adaptiveHeight: true,
   prevArrow: false,
   nextArrow: false,
   slidesToScroll: 2
@@ -45,6 +47,7 @@ settings: {
 breakpoint: 480,
 settings: {
   slidesToShow: 1,
+  adaptiveHeight: true,
   prevArrow: false,
   nextArrow: false,
   slidesToScroll: 1
