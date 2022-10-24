@@ -262,9 +262,33 @@ header{
 
 
 // Футер
+.footer-copy{
+    hr{
+        color: #C4C4C4;
+        opacity: .5;
+        margin: 30px 0;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        p{
+            color: #DDDDDD;
+            font-size: 13px;
+            line-height: 19%;
+        }
+    }
+}
 .footer{
     margin-top: 15.625rem;
     &__body{
+        &-sec3{
+            justify-content: flex-end;
+            .bl3-hide{
+                display: none;
+            }
+        }
         &-sec2{
             a{
                 color: @cream;
@@ -523,6 +547,78 @@ header{
             }
         }
     }
+}
+@media (max-width: 360px)
+{
+    .footer-copy{
+        hr{
+            margin-top: 40px;
+        }
+        section{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+    }
+}
+@media(max-width: 320px){
+    .footer{
+        &__body{ 
+            &-sec3{
+                .footer-search{
+                    label{
+                        margin-top: 28%;
+                        left: 10px;
+                    }
+                }
+                .links{
+                    margin: 0;
+                    margin-top: 40px;
+                    display: flex;
+                    white-space: nowrap;
+                    .bl3-hide{
+                        display: block;
+                        li{
+                            margin: 0;
+                            margin-bottom: 20px;
+                            a{
+                                margin: 0;
+                                color: @cream;
+                                opacity: .6;
+                            }
+                        }
+                    }
+                }
+            }
+            &-sec2{
+                display: none;
+            }
+        section{
+            .soc{
+                margin-top: 50px;
+                &-icons{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        margin-right: 0px;
+                        transition: all 0.2s ease;
+                        margin-left: 40px;
+                        img{
+                            width: 40px;
+                        }
+                        &:hover{
+                            opacity: .6;
+                        }
+                    }
+                }
+                h3{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 }
 
 
