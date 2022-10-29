@@ -56,3 +56,15 @@ settings: {
 ]
 });
   });
+  $(document).ready(function(){
+    $('.slider-block7').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: false,
+      prevArrow: $('.prev-arrow-block7'),
+      nextArrow: $('.next-arrow-block7'),
+    });
+  });
