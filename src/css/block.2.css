@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Gilroy-regular;
+    src: url(../fonts/Gilroy-Regular.woff);
+  }
+  @font-face {
+    font-family: Gilroy-medium;
+    src: url(../fonts/Gilroy-Medium.woff);
+  }
+  @font-face {
+    font-family: Gilroy-bold;
+    src: url(../fonts/Gilroy-Bold.woff);
+  }
+  @font-face {
+    font-family: MinionPro;
+    src: url(../fonts/MinionPro-Regular.woff);
+  }
+  @font-face {
+    font-family: Gilroy-semibold;
+    src: url(../fonts/Gilroy-SemiBold.woff);
+  }
+.name-of-block{
+    font-size: 51px;
+    color: #E9D3B0;
+    font-family: 'MinionPro', Courier, monospace;
+    font-weight: 400;
+    line-height: 119.38%;
+}
+.info-section{
+ font-size: 25px;
+ color: #E9D3B0;
+ margin-top: 83px;
+ margin-bottom: 111px;
+ text-align: center;
+font-family: 'Gilroy-medium', Courier, monospace;
+}
+.color-text{
+    font-size: 25px;
+    color: #D24E44;
+}
+.card{
+    width: 188px;
+    margin: 9px;
+    background-color: black;
+}
+.card-deck{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.card-title{
+    text-align:center;
+    color: #E9D3B0;
+    font-size: 26px;
+    white-space: nowrap;
+    font-family: 'Gilroy-medium', Courier, monospace;
+}
+@media (max-width: 1000px) {
+    .name-of-block{
+        font-size: 42px;
+    }
+    .info-section,.color-text{
+        font-size: 22px;
+    }
+    .card-title{
+        font-size: 22px;
+    }
+    .card-deck{
+        width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    .card-deck{
+        max-width: 530px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .name-of-block{
+        font-size: 32px;
+    }
+    .info-section{
+        max-width: 602px;
+        width: 100%;
+        margin: 40px auto;
+        font-size: 18px;
+
+    }
+    .info-section,.color-text{
+        font-size: 18px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .card{
+        width: 188px;
+    }
+}
+@media (max-width: 576px) {
+    .card-deck{
+        width: 100%;
+    }
+    .card{
+        width: 188px;
+    }
+}
+@media (max-width: 436px) {
+    .card{
+        width: 125px;
+    }
+    .card-deck{
+    justify-content: space-around;
+    }
+}
+@media (max-width: 320px) {
+    .info-section,.color-text{
+        font-size: 16px;
+    }
+    .card-title{
+        font-size: 16px;
+    }
+    .card{
+        width: 110px;
+    }
+}
