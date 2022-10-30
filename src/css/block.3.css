@@ -1,0 +1,64 @@
+.bloc-3_caption{
+    position: absolute;
+    width: 546px;
+    height: 61px;
+    left: 462px;
+    color: #E9D3B0;
+   
+    font-family: 'Minion Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 119.38%;  
+}
+.bloc-3_lin{
+    position: absolute;
+width: 337px;
+height: 0px;
+left: 500px;
+top: 36px;
+
+border: 0.5px solid #FFFFFF;
+}
+.foto1{
+    top:40px
+}
+.gallery1{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(2,500px);
+    
+  }
+  .gallery1__logo{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    background-image: url('../img/block-3/1.png');
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery1__img1{
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row: 1/2;
+    background-image: url('../img/block-3/2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery1__img2{
+    grid-column-start: 10;
+    grid-column-end: 20;
+    grid-row: 2/3;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 53.04%),url('../img/block-3/3.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery1 h2{
+    color: #FFFFFF;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+  }
