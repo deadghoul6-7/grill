@@ -1,31 +1,58 @@
 $(function () {
     $("#elem-2-block-1").mouseover(function(){
-        $('.moving-stick-block-1').css('margin-left','415px');
+      var a = document.querySelector('#elem-2-block-1').getBoundingClientRect();
+      let user_width = document.querySelector('main');
+      let elem_width = document.querySelector('#elem-2-block-1');
+      var uw = user_width.clientWidth;
+      var ew = elem_width.clientWidth;
+     
+      var result = uw - a.left - ew;
+      console.log(a.left);
+      console.log(uw,ew,result);
+      if(uw > 1200)
+      {
+         $('.moving-stick-block-1').css('margin-left','415px');
+      }
+      else{
+         $('.moving-stick-block-1').css('margin-left', (a.left +14  +'px'));
+      }
      });
       $("#elem-2-block-1").mouseout(function(){
         $('.moving-stick-block-1').css('margin-left','60px');
      });
      $("#elem-3-block-1").mouseover(function(){
-        $('.moving-stick-block-1').css('margin-left','759px');
+      var a = document.querySelector('#elem-3-block-1').getBoundingClientRect();
+      let user_width = document.querySelector('main');
+      let elem_width = document.querySelector('#elem-3-block-1');
+      var uw = user_width.clientWidth;
+      var ew = elem_width.clientWidth;
+     
+      var result = uw - a.left - ew;
+      console.log(a.left);
+      console.log(uw,ew,result);
+      if(uw > 1200)
+      {
+         $('.moving-stick-block-1').css('margin-left','759px');
+      }
+      else{
+         $('.moving-stick-block-1').css('margin-left', (a.left + (ew / 2)-12  +'px'));
+      }
      });
       $("#elem-3-block-1").mouseout(function(){
         $('.moving-stick-block-1').css('margin-left','60px');
      });
      $("#elem-4-block-1").mouseover(function(){
-         let elem = document.querySelector('#elem-4-block-1');
-         let rect = elem.getBoundingClientRect();
-         let test = document.querySelector('.chain-block-1');
-         let test1 = document.querySelector('main');
-         var w = test.clientWidth || test.offsetWidth;
-         
-
-         let aaa = test.clientWidth - 1200;
-         console.log(test1.clientWidth -  test.clientWidth);
-         var ddd = test1.clientWidth -  test.clientWidth;
-        $('.moving-stick-block-1').css('margin-left', (test.clientWidth - ddd +'px'));
+        var a = document.querySelector('#elem-4-block-1').getBoundingClientRect();
+        let user_width = document.querySelector('main');
+        let elem_width = document.querySelector('#elem-4-block-1');
+        var uw = user_width.clientWidth;
+        var ew = elem_width.clientWidth;
+        var result = uw - a.left - ew;
+        $('.moving-stick-block-1').css('margin-left', (a.left - result + (ew / 2) +'px'));
      });
       $("#elem-4-block-1").mouseout(function(){
          
         $('.moving-stick-block-1').css('margin-left','60px');
      });
 });
+
