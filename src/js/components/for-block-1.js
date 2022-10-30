@@ -2,13 +2,8 @@ $(function () {
     $("#elem-2-block-1").mouseover(function(){
       var a = document.querySelector('#elem-2-block-1').getBoundingClientRect();
       let user_width = document.querySelector('main');
-      let elem_width = document.querySelector('#elem-2-block-1');
       var uw = user_width.clientWidth;
-      var ew = elem_width.clientWidth;
      
-      var result = uw - a.left - ew;
-      console.log(a.left);
-      console.log(uw,ew,result);
       if(uw > 1200)
       {
          $('.moving-stick-block-1').css('margin-left','415px');
@@ -26,10 +21,7 @@ $(function () {
       let elem_width = document.querySelector('#elem-3-block-1');
       var uw = user_width.clientWidth;
       var ew = elem_width.clientWidth;
-     
-      var result = uw - a.left - ew;
-      console.log(a.left);
-      console.log(uw,ew,result);
+
       if(uw > 1200)
       {
          $('.moving-stick-block-1').css('margin-left','759px');

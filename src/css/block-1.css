@@ -22,6 +22,11 @@
     padding:17px 73px 17px 73px ;
     color: white;
 }
+.button-text-block-1:hover{
+    transition:background-color 0.3s;
+    background-color: #E2A8A6;
+    border-radius: 7px;
+}
 .links-block-1{
     position: absolute;
     top: 450px;
@@ -34,6 +39,9 @@
 }
 .links-block-1 a{
     width: 25px;
+}
+.chain-block-1{
+    margin-top:125px;
 }
 .line-block-1{
     border-top: 1px solid white;
