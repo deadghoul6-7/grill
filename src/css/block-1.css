@@ -9,11 +9,11 @@
     max-width:700px;
     width: 100%;
     margin: 0 auto;
+    font-family: MinionPro, serif;
 }
 .button-block-1{
     margin: 0 auto;
     text-align: center;
-    background-color: #C4504C;
     border-radius: 7px;
     width: 236px;
     margin-top: 40px;
@@ -21,11 +21,17 @@
 .button-text-block-1{
     padding:17px 73px 17px 73px ;
     color: white;
+    background-color: #C4504C;
+    transition:all 0.2s ease;
+    border-radius: 7px;
+    border: 1px solid #C4504C;
+    text-decoration: none;
+    margin: 0 auto ;
+
 }
 .button-text-block-1:hover{
-    transition:background-color 0.3s;
     background-color: #E2A8A6;
-    border-radius: 7px;
+    color: white;
 }
 .links-block-1{
     position: absolute;
@@ -36,9 +42,14 @@
     flex-direction: column;
     width: 100%;
     width: 25px;
+    transition: all 0.2s ease;
 }
+        
 .links-block-1 a{
     width: 25px;
+}
+.links-block-1 a:hover{
+    opacity: .6;
 }
 .chain-block-1{
     margin-top:125px;
