@@ -49,7 +49,7 @@
 .moving-stick-block-1{
     position: absolute;
     margin-top: -18px;
-    margin-left:60px;
+    margin-left:600px;
     border-left: 1px solid white;
     height: 37px;
     transition: margin 0.5s;
