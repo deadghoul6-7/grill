@@ -24,6 +24,33 @@ a {
 }
 body {
   background-color: #000000;
+  background-image: url(../img/block-1/bg.jpg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 1440px) {
+  body {
+    background-image: url(../img/block-1/bg-1440.jpg);
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    background-image: url(../img/block-1/bg-1000.jpg);
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url(../img/block-1/bg-768.jpg);
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background-image: url(../img/block-1/bg-576.jpg);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background-image: url(../img/block-1/bg-320.jpg);
+  }
 }
 header {
   margin-top: 4.5rem;
@@ -351,11 +378,14 @@ header .header-links .icons .login:hover {
   padding: 45px 70px;
   display: flex;
   background-image: url(../img/block-3/1.png);
+  background-repeat: no-repeat;
+  background-size: 105%;
   width: 50%;
   min-height: 1130px;
   flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+  transition: all 0.2s ease;
 }
 .block-3 .sections section p {
   font-size: 45px;
@@ -397,19 +427,32 @@ header .header-links .icons .login:hover {
     font-size: 18px;
   }
 }
-.block-3 .sections section .cta-link:hover svg {
-  color: #FFFFFF;
-  transform: translateX(25px);
-}
-@media (max-width: 1000px) {
-  .block-3 .sections section .cta-link:hover svg {
-    transform: translateX(0);
-  }
-}
 .block-3 .sections section .cta-link svg {
   margin-left: 25px;
   fill: #FFFFFF;
   transition: all 0.2s ease;
+}
+.block-3 .sections section:hover {
+  cursor: pointer;
+  background-size: 110%;
+}
+.block-3 .sections section:hover svg {
+  color: #FFFFFF;
+  transform: translateX(25px);
+}
+@media (max-width: 1000px) {
+  .block-3 .sections section:hover svg {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1838px) {
+  .block-3 .sections section {
+    background-size: cover;
+  }
+  .block-3 .sections section:hover {
+    cursor: pointer;
+    background-size: cover;
+  }
 }
 @media (max-width: 768px) {
   .block-3 .sections section {

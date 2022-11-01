@@ -1,27 +1,8 @@
-@font-face {
-    font-family: Gilroy-regular;
-    src: url(../fonts/Gilroy-Regular.woff);
-  }
-  @font-face {
-    font-family: Gilroy-medium;
-    src: url(../fonts/Gilroy-Medium.woff);
-  }
-  @font-face {
-    font-family: Gilroy-bold;
-    src: url(../fonts/Gilroy-Bold.woff);
-  }
-  @font-face {
-    font-family: MinionPro;
-    src: url(../fonts/MinionPro-Regular.woff);
-  }
-  @font-face {
-    font-family: Gilroy-semibold;
-    src: url(../fonts/Gilroy-SemiBold.woff);
-  }
+
 .name-of-block{
     font-size: 51px;
     color: #E9D3B0;
-    font-family: 'MinionPro', Courier, monospace;
+    font-family: MinionPro, serif;
     font-weight: 400;
     line-height: 119.38%;
 }
@@ -31,7 +12,7 @@
  margin-top: 83px;
  margin-bottom: 111px;
  text-align: center;
-font-family: 'Gilroy-medium', Courier, monospace;
+ font-family: Gilroy-regular, sans-serif;
 }
 .color-text{
     font-size: 25px;
@@ -52,7 +33,7 @@ font-family: 'Gilroy-medium', Courier, monospace;
     color: #E9D3B0;
     font-size: 26px;
     white-space: nowrap;
-    font-family: 'Gilroy-medium', Courier, monospace;
+    font-family: MinionPro, serif;
 }
 @media (max-width: 1000px) {
     .name-of-block{
@@ -102,7 +83,7 @@ font-family: 'Gilroy-medium', Courier, monospace;
         width: 100%;
     }
     .card{
-        width: 188px;
+        width: 160px;
     }
 }
 @media (max-width: 436px) {
@@ -111,6 +92,9 @@ font-family: 'Gilroy-medium', Courier, monospace;
     }
     .card-deck{
     justify-content: space-around;
+    }
+    .card{
+        width: 100px;
     }
 }
 @media (max-width: 320px) {
@@ -121,6 +105,6 @@ font-family: 'Gilroy-medium', Courier, monospace;
         font-size: 16px;
     }
     .card{
-        width: 110px;
+        width: 100px;
     }
 }

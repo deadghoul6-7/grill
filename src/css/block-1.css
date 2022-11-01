@@ -1,3 +1,6 @@
+.block-1{
+    margin-bottom: 250px;
+}
 .block-1-main{
     margin-top: 125px;
 }
@@ -82,4 +85,44 @@
 }
 #elem-1-block-1:hover{
     
+}
+
+
+@media(max-width: 1440px){
+    .block-1{
+        margin-bottom: 125px;
+    }
+    .main-text-in-block-1{
+        font-size: 64px;
+    }
+}
+@media(max-width: 1000px){
+    .block-1{
+        margin-bottom: 100px;
+    }
+    .main-text-in-block-1{
+        font-size: 52px;
+    }
+}
+@media(max-width: 768px){
+    .links-block-1{
+        display: none;
+    }
+    .chain-block-1{
+        display: none;
+    }
+    .block-1{
+        margin-bottom: 200px;
+    }
+    .main-text-in-block-1{
+        font-size: 42px;
+    }
+}
+@media(max-width: 576px){
+    .block-1{
+        margin-bottom: 130px;
+    }
+    .main-text-in-block-1{
+        font-size: 30px;
+    }
 }

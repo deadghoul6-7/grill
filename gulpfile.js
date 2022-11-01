@@ -81,6 +81,14 @@ const resourses = () => {
     return src('src/resourses/**')
         .pipe(dest('dist'))
 }
+const fonts = () => {
+    return src('src/fonts/*.woff')
+        .pipe(dest('dist/fonts'))
+}
+const ico = () => {
+    return src('src/img/icons/*.ico')
+        .pipe(dest('dist/img/icons'))
+}
 
 const clean = () =>{
     return del('dist')
@@ -93,7 +101,6 @@ const watchFile = () => {
         }
     });
 }
-
 watch('src/**/*.html', htmlMinify);
 watch('src/css/**/*.css', styles);
 watch('src/img/svg/**/*.svg', svgSprites);
@@ -105,5 +112,7 @@ watch([
 ], images)
 watch('src/js/**/*.js', scripts);
 watch('src/resourses/**', resourses);
+watch('src/fonts/*.woff', fonts);
+watch('src/img/icons/*.ico', ico);
 
-exports.default = series(clean, styles, htmlMinify, svgSprites, images, scripts, resourses, watchFile);
+exports.default = series(clean, styles, htmlMinify, svgSprites, images, scripts, resourses, fonts, ico, watchFile);
