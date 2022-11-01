@@ -48,10 +48,11 @@
     transition: all 0.2s ease;
 }
         
-.links-block-1 a{
-    width: 25px;
+.links__block__1{
+    transition: all 0.2s ease;
+    opacity: 1;
 }
-.links-block-1 a:hover{
+.links__block__1:hover{
     opacity: .6;
 }
 .chain-block-1{

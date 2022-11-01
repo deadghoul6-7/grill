@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="block-2.css">
     <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
@@ -17,7 +18,7 @@
     <title>BBQ</title>
 </head>
 <body>
-    <header class="anim animate__fadeInDown animate__faster animate__delay-1s">
+    <header class="anim animate__fadeInDown animate__faster">
         <div class="header" id="back">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -33,8 +34,8 @@
                     </form>
                     
                     <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-5 sol-sm-4 header-inf">    
-                        <p class="item__time">ПН—ВС 10:00-21:00</p>
-                        <a href="mailto:sales@grill.krd" class="item__email">sales@grill.krd</a>
+                        <p class="item__time anim animate__fadeInDown animate__faster animate__delay-1s">ПН—ВС 10:00-21:00</p>
+                        <div class="item__email anim animate__fadeInDown animate__faster animate__delay-1s"><a href="mailto:sales@grill.krd">sales@grill.krd</a></div>
                    </div>
                  <div class="col-xxl-4 col-xl-4 col-lg-2 col-md-2 col-sm-4 text-center header-logo">
                    <div class="navbar-brend">
@@ -42,10 +43,10 @@
                    </div>
                  </div>
                  <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-5 col-sm-4 header-links">
-                   <div class="phone-block">
+                   <div class="phone-block anim animate__fadeInDown animate__faster animate__delay-1s">
                      <a href="tel:+74951234567" class="phone-link item__tel"><img src="img/icons/tel.svg" alt="Телефон"><img src="img/icons/phone-line.svg" alt="Линия">+7 945 439 23 54</a>
                    </div>
-                   <div class="icons">
+                   <div class="icons anim animate__fadeInDown animate__faster animate__delay-1s">
                        <a href="" class="basket"><img src="img/icons/basket.svg" alt="Корзина"></a>
                        <a href="" class="login"><img src="img/icons/login.svg" alt="Войти"></a>
                    </div>
@@ -74,25 +75,25 @@
             <div class="section block-1">
                 <div class="block-1-main">
                     <div class="links-block-1">
-                        <a href="#"><img src="img/block-1/inst.png" alt=""></a>
-                        <a href="#"><img src="img/block-1/фб.png" alt=""></a>
-                        <a href="#"><img src="img/block-1/vk.png" alt=""></a>
+                        <div class="links__block__1__a1 anim animate__fadeInLeft animate__faster animate__delay-1s"><a href="#" class="links__block__1"><img src="img/block-1/inst.png" alt=""></a></div>
+                        <div class="links__block__1__a2 anim animate__fadeInLeft animate__faster animate__delay-1s"><a href="#" class="links__block__1"><img src="img/block-1/фб.png" alt=""></a></div>
+                        <div class="links__block__1__a3 anim animate__fadeInLeft animate__faster animate__delay-1s"><a href="#" class="links__block__1"><img src="img/block-1/vk.png" alt=""></a></div>
                     </div> 
-                    <h1 class="main-text-in-block-1">Попробуй <br> настоящее BBQ <br>на вкус</h1>
-                    <div class="button-block-1"><a href="#" class="button-text-block-1">В каталог</a></div>
+                    <h1 class="anim animate__fadeIn animate__faster animate__delay-1s main-text-in-block-1">Попробуй <br> настоящее BBQ <br>на вкус</h1>
+                    <div class="anim animate__fadeInUp animate__faster animate__delay-1s button-block-1"><a href="#" class="button-text-block-1">В каталог</a></div>
                 </div>
                 <div class="chain-block-1">
-                    <div class="line-block-1"></div>
-                    <div class="moving-stick-block-1"></div>
+                    <div class="line-block-1 anim animate__fadeInUp animate__faster animate__delay-1s"></div>
+                    <div class="moving-stick-block-1 anim animate__fadeInUp animate__faster animate__delay-1s"></div>
                     <div class="list-of-enements-block-1">
                         <ul class="ul-block-1">
-                            <a class="anchor-link-block-1" id="elem-1-block-1" href="#">
+                            <a class="anchor-link-block-1 anim animate__fadeInUp animate__faster animate__delay-1s" id="elem-1-block-1" href="#">
                                 <li>Каталог товаров</li>
-                            </a><a class="anchor-link-block-1" id="elem-2-block-1" href="#">
+                            </a><a class="anchor-link-block-1 anim animate__fadeInUp animate__faster animate__delay-1s" id="elem-2-block-1" href="#">
                                 <li>Акции</li>
-                            </a><a class="anchor-link-block-1" id="elem-3-block-1" href="#">
+                            </a><a class="anchor-link-block-1 anim animate__fadeInUp animate__faster animate__delay-1s" id="elem-3-block-1" href="#">
                                 <li>Сертификаты</li>
-                            </a><a class="anchor-link-block-1" id="elem-4-block-1" href="#">
+                            </a><a class="anchor-link-block-1 anim animate__fadeInUp animate__faster animate__delay-1s" id="elem-4-block-1" href="#">
                                 <li>Фотогалерея</li>
                             </a>
                         </ul>
@@ -105,12 +106,26 @@
             <div class="container">
               <div class="row">
                 <div class="col-xxl-12 col-lg-offset-2 text-uppercase">
-                  <h2 class="name-of-block text-center">Южный гриль и барбекю</h2>
+                  <h2 class="name-of-block text-center" data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="0"
+                  data-aos-duration="600"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                  data-aos-once="true"
+                  data-aos-anchor-placement="top-bottom">Южный гриль и барбекю</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xxl-12 col-lg-offset-2">
-                  <p class="info-section">
+                  <p class="info-section" data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="100"
+                  data-aos-duration="600"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                  data-aos-once="true"
+                  data-aos-anchor-placement="top-bottom">
                     В нашем интернет-магазине вы сможете найти<span class="color-text"> все, что касается BBQ,</span> 
                     от различных аксессуаров до самых престижных грилей! 
                   </p> 
@@ -119,25 +134,53 @@
               <div class="row">
                 <div class="col-xxl-12">
                   <div class="card-deck">
-                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center" data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="600"
+                    data-aos-easing="ease"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-bottom">
                       <img src="img/block-2/1-img-block2.svg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Мраморная <br>говядина</h5>
                       </div>
                     </div>
-                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center" data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="100"
+                    data-aos-duration="600"
+                    data-aos-easing="ease"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-bottom">
                       <img src="img/block-2/2-img-block2.svg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Товары для<br>гриля и BBQ</h5>
                       </div>
                     </div>
-                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center" data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="200"
+                    data-aos-duration="600"
+                    data-aos-easing="ease"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-bottom">
                       <img src="img/block-2/3-img-block2.svg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Доставка<br>на дом</h5>
                       </div>
                     </div>
-                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center" data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="300"
+                    data-aos-duration="600"
+                    data-aos-easing="ease"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    data-aos-anchor-placement="top-bottom">
                       <img src="img/block-2/4-img-block2.svg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Обучение <br>готовке</h5>
@@ -151,8 +194,22 @@
 
         <div class="wrapper block-3">
           <div class="block-3__header d-flex align-items-center justify-content-center">
-            <h2>Каталог товаров</h2>
-            <div class="line"></div>
+            <h2 data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom">Каталог товаров</h2>
+            <div class="line" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-bottom"></div>
           </div>
           <div class="sections">
            <a href="#" class="section-1">
@@ -204,28 +261,105 @@
                     <section class="footer">
                         <div class="row">
                             <div class="footer__header d-flex align-items-center justify-content-start">
-                                <h2>Контакты</h2>
-                                <div class="line"></div>
+                                <h2 data-aos="fade-right"
+                                data-aos-offset="200"
+                                data-aos-delay="150"
+                                data-aos-duration="600"
+                                data-aos-easing="ease"
+                                data-aos-mirror="true"
+                                data-aos-once="true"
+                                data-aos-anchor-placement="top-bottom">Контакты</h2>
+                                <div class="line" data-aos="fade-right"
+                                data-aos-offset="200"
+                                data-aos-delay="0"
+                                data-aos-duration="600"
+                                data-aos-easing="ease"
+                                data-aos-mirror="true"
+                                data-aos-once="true"
+                                data-aos-anchor-placement="top-bottom"></div>
                             </div>
                             <div class="footer__body row">
                                 <section class="footer__body-sec1 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                     <ul>
-                                        <li><a href="tel:8-861-202-52-22" id="link-1">8-861-202-52-22</a></li>
-                                        <li>ПН—ВС 10:00-21:00</li>
-                                        <li><a href="mailto:sales@grill.krd" id="link-2">sales@grill.krd</a></li>
-                                        <li><a href="#"><img src="img/logo-footer.svg" alt="логотип"></a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="350"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="tel:8-861-202-52-22" id="link-1">8-861-202-52-22</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="450"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom">ПН—ВС 10:00-21:00</li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="550"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="mailto:sales@grill.krd" id="link-2">sales@grill.krd</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="650"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="#"><img src="img/logo-footer.svg" alt="логотип"></a></li>
                                     </ul>
                                 </section>
                                 <section class="footer__body-sec2 col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-6 col-xs-12">
                                     <ul>
-                                        <li><a href="#">Каталог товаров</a></li>
-                                        <li><a href="#">Акции</a></li>
-                                        <li><a href="#">Сертификаты</a></li>
-                                        <li><a href="#">Фотогалерея</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="650"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="#">Каталог товаров</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="750"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="#">Акции</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="850"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="#">Сертификаты</a></li>
+                                        <li data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="950"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom"><a href="#">Фотогалерея</a></li>
                                     </ul>
                                 </section>
                                 <section class="footer__body-sec3 col-xxl-5 col-xl-5 col-lg-4 col-md-5 col-sm-7 col-xs-12">
-                                    <form action="" class="footer-search">
+                                    <form action="" class="footer-search" data-aos="fade-right"
+                                    data-aos-offset="200"
+                                    data-aos-delay="1050"
+                                    data-aos-duration="500"
+                                    data-aos-easing="ease"
+                                    data-aos-mirror="true"
+                                    data-aos-once="true"
+                                    data-aos-anchor-placement="top-bottom">
                                         <label for="search">Поиск по сайту</label>
                                         <input type="search" name="search" class="form-control footer-search__input">
                                         <div class="links">
@@ -240,11 +374,39 @@
                                         </div>
                                     </form>
                                     <div class="soc">
-                                        <h3>Мы в социальных сетях:</h3>
+                                        <h3 data-aos="fade-right"
+                                        data-aos-offset="200"
+                                        data-aos-delay="1150"
+                                        data-aos-duration="500"
+                                        data-aos-easing="ease"
+                                        data-aos-mirror="true"
+                                        data-aos-once="true"
+                                        data-aos-anchor-placement="top-bottom">Мы в социальных сетях:</h3>
                                         <div class="soc-icons">
-                                            <a href="#"><img src="img/icons/inst.svg" alt=""></a>
-                                            <a href="#"><img src="img//icons/fb.svg" alt=""></a>
-                                            <a href="#"><img src="img/icons/vk.svg" alt=""></a>
+                                            <div data-aos="fade-up"
+                                            data-aos-offset="200"
+                                            data-aos-delay="1250"
+                                            data-aos-duration="500"
+                                            data-aos-easing="ease"
+                                            data-aos-mirror="true"
+                                            data-aos-once="true"
+                                            data-aos-anchor-placement="top-bottom"><a href="#"><img src="img/icons/inst.svg" alt=""></a></div>
+                                            <div data-aos="fade-up"
+                                            data-aos-offset="200"
+                                            data-aos-delay="1350"
+                                            data-aos-duration="500"
+                                            data-aos-easing="ease"
+                                            data-aos-mirror="true"
+                                            data-aos-once="true"
+                                            data-aos-anchor-placement="top-bottom"><a href="#"><img src="img//icons/fb.svg" alt=""></a></div>
+                                            <div data-aos="fade-up"
+                                            data-aos-offset="200"
+                                            data-aos-delay="1450"
+                                            data-aos-duration="500"
+                                            data-aos-easing="ease"
+                                            data-aos-mirror="true"
+                                            data-aos-once="true"
+                                            data-aos-anchor-placement="top-bottom"><a href="#"><img src="img/icons/vk.svg" alt=""></a></div>
                                         </div>
                                     </div>
                                 </section>
@@ -278,8 +440,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="resourses/slick/slick.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        
+    AOS.init();
     </script>
 </body>
 </html>
