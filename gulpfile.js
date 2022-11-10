@@ -55,6 +55,7 @@ const images = () => {
         'src/img/**/*.jpeg',
         'src/img/**/*.png',
         'src/img/**/*.svg',
+        'src/img/**/*.webp'
     ])
     .pipe(image())
     .pipe(dest('dist/img'))
@@ -109,6 +110,7 @@ watch([
         'src/img/**/*.jpeg',
         'src/img/**/*.png',
         'src/img/**/*.svg',
+        'src/img/**/*.webp'
 ], images)
 watch('src/js/**/*.js', scripts);
 watch('src/resourses/**', resourses);
