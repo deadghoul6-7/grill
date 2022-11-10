@@ -24,32 +24,32 @@ a {
 }
 body {
   background-color: #000000;
-  background-image: url(img/block-1/bg.jpg);
+  background-image: url(img/block-1/bg.webp);
   background-repeat: no-repeat;
 }
 @media (max-width: 1440px) {
   body {
-    background-image: url(img/block-1/bg-1440.jpg);
+    background-image: url(img/block-1/bg-1440.webp);
   }
 }
 @media (max-width: 1000px) {
   body {
-    background-image: url(img/block-1/bg-1000.jpg);
+    background-image: url(img/block-1/bg-1000.webp);
   }
 }
 @media (max-width: 768px) {
   body {
-    background-image: url(img/block-1/bg-768.jpg);
+    background-image: url(img/block-1/bg-768.webp);
   }
 }
 @media (max-width: 576px) {
   body {
-    background-image: url(img/block-1/bg-576.jpg);
+    background-image: url(img/block-1/bg-576.webp);
   }
 }
 @media (max-width: 320px) {
   body {
-    background-image: url(img/block-1/bg-320.jpg);
+    background-image: url(img/block-1/bg-320.webp);
   }
 }
 header {
@@ -381,7 +381,7 @@ header .header-links .icons .login:hover {
 .block-3 .sections section {
   padding: 45px 70px;
   display: flex;
-  background-image: url(img/block-3/1.png);
+  background-image: url(img/block-3/1.webp);
   background-repeat: no-repeat;
   background-size: 105%;
   width: 50%;
@@ -462,7 +462,7 @@ header .header-links .icons .login:hover {
   .block-3 .sections section {
     width: 100%;
     min-height: 447px;
-    background-image: url(img/block-3/4.png);
+    background-image: url(img/block-3/4.webp);
     align-items: flex-start;
   }
 }
@@ -483,7 +483,7 @@ header .header-links .icons .login:hover {
 .block-3 .sections .sect section {
   padding: 45px 70px;
   display: flex;
-  background-image: url(img/block-3/2.png);
+  background-image: url(img/block-3/2.webp);
   width: 100%;
   flex-direction: column;
   justify-content: end;
@@ -547,7 +547,7 @@ header .header-links .icons .login:hover {
   .block-3 .sections .sect section {
     width: 100%;
     min-height: 447px;
-    background-image: url(img/block-3/5.png);
+    background-image: url(img/block-3/5.webp);
   }
 }
 @media (max-width: 360px) {
@@ -557,7 +557,7 @@ header .header-links .icons .login:hover {
 }
 .block-3 .sections .sect .sec3 {
   min-height: 448px;
-  background-image: url(img/block-3/3.png);
+  background-image: url(img/block-3/3.webp);
 }
 .block-3__header {
   width: 100%;
