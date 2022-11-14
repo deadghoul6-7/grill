@@ -68,11 +68,16 @@ $(function () {
     $("#elem-4-block-1").mouseover(function(){
        var a = document.querySelector('#elem-4-block-1').getBoundingClientRect();
        let user_width = document.querySelector('main');
-       let elem_width = document.querySelector('#elem-4-block-1');
+       let elem_width = document.querySelector('#elem-4-block-1'); 
+       let eww = document.getElementById('elem-4-block-1');
+       let block_width = document.querySelector('chain-block-1');
+       let bw = block_widht.clientWidth;
        var uw = user_width.clientWidth;
        var ew = elem_width.clientWidth;
        var result = uw - a.left - ew;
-       $('.moving-stick-block-1').css('margin-left', (a.left - result + (ew / 2) +'px'));
+       var ew1 = eww.clientWidth;
+      //  $('.moving-stick-block-1').css('margin-left', (a.left - result + (ew / 2) +'px'));
+      $('.moving-stick-block-1').css('margin-left', (bw - 50 + 'px'));
     });
      $("#elem-4-block-1").mouseout(function(){
         
