@@ -55,7 +55,10 @@ $(function () {
         $('.moving-stick-block-1').css('margin-left','759px');
      }
      else{
-        $('.moving-stick-block-1').css('margin-left', (a.left + (ew / 2)-12  +'px'));
+        $('.moving-stick-block-1').css('margin-left', (a.left + /*(ew / 2)*/41   +'px'));
+        console.log(a.left + (ew / 2));
+        console.log(a.left);
+        console.log((ew / 2));
      }
     });
      $("#elem-3-block-1").mouseout(function(){
