@@ -613,7 +613,81 @@ header{
 }
 
 
-
+.block-9{
+    margin-top: 125px;
+    .container{
+        color:@cream;
+        .row{
+            h2{
+                .minionPro();
+                font-size: 51px;
+                line-height: 120%;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+            .form{
+                &-btn{
+                    display: flex;
+                    flex-direction: column;
+                    button{
+                        margin-top: 60px;
+                        .minionPro();
+                        letter-spacing: 0.1rem;
+                        font-size: 22px;
+                        line-height: 117%;
+                        color: @white;
+                        background-color: @red;
+                        height: 50px;
+                        width: 207px;
+                        border-radius: 100px;
+    
+                    }
+                    small{
+                        margin-top: 30px;
+                        opacity: .6;
+                        font-size: 15px;
+                        .gilroy-regular();
+                        a{
+                            text-decoration: underline;
+                            color: @cream;
+                        }
+                    }
+                }
+                .name, .phone{
+                    position: relative;
+                    color: @cream;
+                    transition: all 0.2s ease;
+                    margin-top: 30px;
+                    &:hover, &:hover input{
+                        color: @light-cream;
+                        border-color: @light-cream;
+                    }
+                    &:active, &:focus{
+                        background-color: black;
+                    }
+                label{
+                    .minionPro();
+                    padding: 5px 16px;
+                    background-color: @black;
+                    position: absolute;
+                    top: -40%;
+                    left: 40px;
+                }
+                input{
+                    background: none;
+                    border: solid 1px @cream;
+                    border-radius: 120px;
+                    min-height: 50px;
+                    color: @white;
+                    .minionPro();
+                    padding: 0 40px;
+                    transition: all 0.2s ease;
+                }
+                }
+            }
+        }
+    }
+}
 
 
 
