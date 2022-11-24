@@ -601,8 +601,17 @@ header{
             margin-right: 3.3125rem;
             line-height: 119.4%;
             letter-spacing: 0.20;
-            font-size: 2.1875rem;
+            font-size: 51px;
             text-transform: uppercase;
+            @media (max-width: 1439px){
+                font-size: 42px;
+            }
+            @media (max-width: 999px){
+                font-size: 32px;
+            }
+            @media (max-width: 767px){
+                font-size: 30px;
+            }
         }
         .line{
             height: 1px;
@@ -615,68 +624,68 @@ header{
 
 // block-6 ----------------------------------------------------
 
-.block-6{
-    margin-bottom: 100px;
-    .container{
-        .slider{
-            &__item{
-                margin-right: 30px;
-                width: 370px;
-                position: relative;
-                text-align: center;
-                padding: 35px 37px;
-                border: 1px solid @cream;
-                color: @cream;
-                .slick-list{
-                    overflow: visible !important;
-                }
-                .title{
-                    .minionPro();
-                    font-size: 26px;
-                    line-height: 62%;
-                    margin-top: 54px;
-                }
-                .price{
-                    color: @red;
-                    margin-top: 20px;
-                    .gilroy-semibold();
-                    font-size: 18px;
-                    line-height: 119%;
-                }
-                span{
-                    position: absolute;
-                    left: 36%;
-                    top: 95%;
-                    .minionPro();
-                    font-size: 17px;
-                    background-color: @cream;
-                    color: @black;
-                    padding: 14px 22px;
-                    border-radius: 100px;
-                }
-            }
-        }
-        .block-6__header{
-            width: 100%;
-            margin-bottom: 80px;
-            text-align: center;
-            h2{
-                .minionPro();
-                color: @cream;
-                margin-right: 3.3125rem;
-                line-height: 119.4%;
-                letter-spacing: 0.20;
-                font-size: 2.1875rem;
-                text-transform: uppercase;
-            }
-            .line{
-                height: 1px;
-                width: 370px;
-                background-color: @cream;
-            }
-        }
-    }
-}
+// .block-6{
+//     margin-bottom: 100px;
+//     .container{
+//         .slider{
+//             &__item{
+//                 margin-right: 30px;
+//                 width: 370px;
+//                 position: relative;
+//                 text-align: center;
+//                 padding: 35px 37px;
+//                 border: 1px solid @cream;
+//                 color: @cream;
+//                 .slick-list{
+//                     overflow: visible !important;
+//                 }
+//                 .title{
+//                     .minionPro();
+//                     font-size: 26px;
+//                     line-height: 62%;
+//                     margin-top: 54px;
+//                 }
+//                 .price{
+//                     color: @red;
+//                     margin-top: 20px;
+//                     .gilroy-semibold();
+//                     font-size: 18px;
+//                     line-height: 119%;
+//                 }
+//                 span{
+//                     position: absolute;
+//                     left: 36%;
+//                     top: 95%;
+//                     .minionPro();
+//                     font-size: 17px;
+//                     background-color: @cream;
+//                     color: @black;
+//                     padding: 14px 22px;
+//                     border-radius: 100px;
+//                 }
+//             }
+//         }
+//         .block-6__header{
+//             width: 100%;
+//             margin-bottom: 80px;
+//             text-align: center;
+//             h2{
+//                 .minionPro();
+//                 color: @cream;
+//                 margin-right: 3.3125rem;
+//                 line-height: 119.4%;
+//                 letter-spacing: 0.20;
+//                 font-size: 2.1875rem;
+//                 text-transform: uppercase;
+//             }
+//             .line{
+//                 height: 1px;
+//                 width: 370px;
+//                 background-color: @cream;
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -706,6 +715,7 @@ header{
         }
         .row{
             .p{
+                margin-top: 30px;
                 .gilroy-regular();
                 font-size: 25px;
                 @media (max-width: 1439px){
@@ -763,6 +773,16 @@ header{
                         width: 207px;
                         border-radius: 100px;
                         border: none;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            background-color: @dark-red;
+                        }
+                        &:focus{
+                            background-color: @red;
+                        }
+                        &:disabled{
+                            opacity: .6;
+                        }
                         @media (max-width: 999px){
                             width: 100%
                         }

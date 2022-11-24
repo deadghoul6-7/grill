@@ -11,8 +11,14 @@
     line-height: 15px;
     letter-spacing: 5%;
     color: black;
+    transition: all 0.2s ease;
+}
+.link-more-stocks:hover{
+    color: #D24E44;
 }
 .stock-name{
+    font-family: MinionPro, serif;
+    letter-spacing: 0.1em;
     font-size: 51px;
     line-height: 60px;
     letter-spacing: 10%;
