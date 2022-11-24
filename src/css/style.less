@@ -77,7 +77,7 @@ header{
     margin-top: 4.5rem;
     background:url(img/bg-header.svg) center no-repeat;
     background-size:150%;
-    vertical-align: middle;
+    vertical-align: middle; 
     padding: 0 auto;
     .header{
         .buttons{
@@ -613,17 +613,100 @@ header{
 }
 
 
+// block-6 ----------------------------------------------------
+
+.block-6{
+    .container{
+        .block-6__header{
+            width: 100%;
+            margin-bottom: 80px;
+            text-align: center;
+            h2{
+                .minionPro();
+                color: @cream;
+                margin-right: 3.3125rem;
+                line-height: 119.4%;
+                letter-spacing: 0.20;
+                font-size: 2.1875rem;
+                text-transform: uppercase;
+            }
+            .line{
+                height: 1px;
+                width: 370px;
+                background-color: @cream;
+            }
+        }
+    }
+}
+
+
+
+// block-9 ----------------------------------------------------
 .block-9{
     margin-top: 125px;
     .container{
         color:@cream;
+        background-image: url(img/block-9/bg-block-9-1920.jpg);
+        @media(max-width:1600px){
+            background-image: url(img/block-9/bg-block-9-1440.jpg);
+        }
+        @media(max-width:1440px){
+            background-image: url(img/block-9/bg-block-9-1440.jpg);
+        }
+        @media(max-width:1000px){
+            background-image: url(img/block-9/bg-block-9-1000.jpg);
+        }
+        @media(max-width:768px){
+            background-image: url(img/block-9/bg-block-9-768.jpg);
+        }
+        @media(max-width:576px){
+            background-image: url(img/block-9/bg-block-9-576.jpg);
+        }
+        @media(max-width:360px){
+            background-image: url(img/block-9/bg-block-9-360.jpg);
+        }
         .row{
+            .p{
+                .gilroy-regular();
+                font-size: 25px;
+                @media (max-width: 1439px){
+                    font-size: 22px;
+                }
+                @media (max-width: 999px){
+                    font-size: 18px;
+                }
+                span{
+                    .gilroy-semibold();
+                }
+                .red{
+                    .gilroy-semibold();
+                    color: @red;
+                }
+            }
+            .p_small{
+                .gilroy-regular();
+                font-size: 20px;
+                @media (max-width: 575px){
+                    display: none;
+                }
+            }
+
             h2{
                 .minionPro();
                 font-size: 51px;
                 line-height: 120%;
                 letter-spacing: 0.2rem;
                 text-transform: uppercase;
+                @media (max-width: 1439px){
+                    font-size: 42px;
+                }
+                @media (max-width: 999px){
+                    font-size: 32px;
+                }
+                @media (max-width: 767px){
+                    font-size: 30px;
+                }
+
             }
             .form{
                 &-btn{
@@ -640,6 +723,10 @@ header{
                         height: 50px;
                         width: 207px;
                         border-radius: 100px;
+                        border: none;
+                        @media (max-width: 999px){
+                            width: 100%
+                        }
     
                     }
                     small{
