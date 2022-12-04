@@ -201,3 +201,53 @@ settings: {
       nextArrow: $('.next-arrow-block7'),
     });
   });
+
+  $(document).ready(function(){
+    $('.slider_block6 ').slick({
+
+     
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+     
+      adaptiveHeight: true,
+      variableWidth: true,
+      prevArrow: $('.prev-arrow-block6'),
+      nextArrow: $('.next-arrow-block6'),
+
+      responsive: [
+        {
+          breakpoint: 1190,
+          settings: {
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+           
+            adaptiveHeight: false,
+            variableWidth: false,
+          
+        }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+          slidesToShow: 1,
+          infinite: true,
+          daptiveHeight: false,
+          variableWidth: false,
+        
+          slidesToScroll: 1
+          
+        }
+        },
+        
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+        ]
+      
+
+      }
+    );
+  
+  });
